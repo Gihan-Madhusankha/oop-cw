@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="314.0" prefWidth="418.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverFormController">
+   <children>
+      <Label layoutX="119.0" layoutY="78.0" text="NIC" textFill="#1e3799">
+         <font>
+            <Font name="Goudy Old Style" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="166.0" text="Address" textFill="#1e3799">
+         <font>
+            <Font name="Goudy Old Style" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="210.0" text="Contact No." textFill="#1e3799">
+         <font>
+            <Font name="Goudy Old Style" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="183.0" layoutY="79.0" orientation="VERTICAL" prefHeight="16.0" prefWidth="0.0" />
+      <Separator layoutX="183.0" layoutY="168.0" orientation="VERTICAL" prefHeight="16.0" prefWidth="0.0" />
+      <Separator layoutX="183.0" layoutY="214.0" orientation="VERTICAL" prefHeight="16.0" prefWidth="0.0" />
+      <JFXTextField fx:id="txtDriverName" layoutX="225.0" layoutY="23.0" prefHeight="25.0" prefWidth="141.0" unFocusColor="#130f40" />
+      <JFXTextField fx:id="txtAddress" layoutX="225.0" layoutY="164.0" prefHeight="25.0" prefWidth="141.0" unFocusColor="#130f40" />
+      <JFXTextField fx:id="txtContactNo" layoutX="225.0" layoutY="211.0" prefHeight="25.0" prefWidth="141.0" unFocusColor="#130f40" />
+      <Label layoutX="34.0" layoutY="122.0" text="Driving License No." textFill="#1e3799">
+         <font>
+            <Font name="Goudy Old Style" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="182.0" layoutY="123.0" orientation="VERTICAL" prefHeight="16.0" prefWidth="0.0" />
+      <JFXButton buttonType="RAISED" layoutX="272.0" layoutY="262.0" onAction="#addDriverOnAction" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #1dd1a1;" text="Add Driver" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="71.0" layoutY="34.0" text="Driver Name" textFill="#1e3799">
+         <font>
+            <Font name="Goudy Old Style" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="183.0" layoutY="35.0" orientation="VERTICAL" prefHeight="16.0" prefWidth="0.0" />
+      <JFXTextField fx:id="txtNIC" layoutX="225.0" layoutY="70.0" prefHeight="25.0" prefWidth="141.0" unFocusColor="#130f40" />
+      <JFXTextField fx:id="txtDrivingLicenseNo" layoutX="225.0" layoutY="117.0" prefHeight="25.0" prefWidth="141.0" unFocusColor="#130f40" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="287.0" prefWidth="418.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <Label layoutX="50.0" layoutY="45.0" text="Vehicle Number" textFill="#1e3799">
+         <font>
+            <Font name="Goudy Old Style" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="133.0" text="Maximum Weight" textFill="#1e3799">
+         <font>
+            <Font name="Goudy Old Style" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="177.0" text="No of passengers" textFill="#1e3799">
+         <font>
+            <Font name="Goudy Old Style" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="185.0" layoutY="46.0" orientation="VERTICAL" prefHeight="16.0" prefWidth="0.0" />
+      <Separator layoutX="185.0" layoutY="135.0" orientation="VERTICAL" prefHeight="16.0" prefWidth="0.0" />
+      <Separator layoutX="185.0" layoutY="181.0" orientation="VERTICAL" prefHeight="16.0" prefWidth="0.0" />
+      <JFXTextField fx:id="txtVehicleNumber" layoutX="227.0" layoutY="41.0" prefHeight="25.0" prefWidth="141.0" unFocusColor="#130f40" />
+      <JFXTextField fx:id="txtMaximumWeight" layoutX="227.0" layoutY="131.0" prefHeight="25.0" prefWidth="141.0" unFocusColor="#130f40" />
+      <JFXTextField fx:id="txtNoOfPassengers" layoutX="227.0" layoutY="175.0" prefHeight="25.0" prefWidth="141.0" unFocusColor="#130f40" />
+      <Label layoutX="69.0" layoutY="89.0" text="Vehicle Type" textFill="#1e3799">
+         <font>
+            <Font name="Goudy Old Style" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="184.0" layoutY="90.0" orientation="VERTICAL" prefHeight="16.0" prefWidth="0.0" />
+      <JFXComboBox fx:id="txtVehicleType" layoutX="227.0" layoutY="84.0" prefHeight="25.0" prefWidth="141.0" unFocusColor="#130f40" />
+      <JFXButton buttonType="RAISED" layoutX="274.0" layoutY="232.0" onAction="#addVehicleOnAction" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #1dd1a1;" text="Add Vehicle" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+   </children>
+</AnchorPane>
